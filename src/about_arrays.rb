@@ -42,6 +42,11 @@ class AboutArrays < Neo::Koan
     assert_equal __([]), array[4,0]
     assert_equal __([]), array[4,100]
     assert_equal __(nil), array[5,0]
+    
+    # Surprised ?
+    # In the slicing notation, the first argument represents
+    # the index of the "fence post" between two elements, 
+    # NOT the index of an element.    
   end
 
   def test_arrays_and_ranges
